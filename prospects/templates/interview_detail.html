@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+  <h1>{{ interview.company_name|capfirst }}</h1>
+  <p>{{ interview.date|date:"M d Y"}}</p>
+  <p>Interview Stage: {{ interview.stage }}</p>
+  <p>{{Interview.Verdict }}</p>
+</div>
+{% endblock %}
+
